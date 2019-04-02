@@ -8,6 +8,7 @@ public class Fibonacci {
         
         Scanner scan = new Scanner(System.in);
         int nilai;
+        int sum = 0;
         
         System.out.println("Input:");
         nilai = scan.nextInt();
@@ -21,8 +22,10 @@ public class Fibonacci {
             fibo[i] = fibo[i-1] + fibo[i-2];
         }
         for (int i = 1; i < nilai; i++) {
-            System.out.print(fibo[i] + " ");
+            sum = (int)(sum+fibo[i]);
         }
+        
+        System.out.println(sum);
         
     }   
     
