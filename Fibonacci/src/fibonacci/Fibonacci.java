@@ -20,7 +20,7 @@ public class Fibonacci {
         for (int i = 2; i < nilai; i++) {
             fibo[i] = fibo[i-1] + fibo[i-2];
         }
-        for (int i = 1; i < nilai; i++) {
+        for (int i = nilai-1; i > 0; i--) {
             System.out.print(fibo[i] + " ");
         }
         
